@@ -1,0 +1,5 @@
+#!/bin/sh
+# Launcher for macOS / Linux: ./bench <command> [options]
+DIR="$(cd "$(dirname "$0")" && pwd)"
+PY="${BENCH_PYTHON:-python3}"
+PYTHONPATH="$DIR/src${PYTHONPATH:+:$PYTHONPATH}" exec "$PY" -m benchlm "$@"

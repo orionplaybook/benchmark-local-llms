@@ -1,0 +1,32 @@
+{
+  "suite_version": "1",
+  "name": "short",
+  "system_prompt": "You are Relay, an operations assistant running inside an automation workflow for Brightfield Home Services, a small company that installs and maintains heat pumps. You help the operations coordinator answer questions, summarise documents, extract data for other workflow steps and plan work. Be accurate and concise. When asked for JSON, output only valid JSON with exactly the requested keys and no commentary. When information is missing, use null instead of guessing.",
+  "turns": [
+    {
+      "label": "Factual explanation",
+      "user": "Quick question before I brief a new technician: in two or three sentences, how does an air-source heat pump heat a house even when the outside air is cold?",
+      "max_tokens": 192
+    },
+    {
+      "label": "Summarise paragraph",
+      "user": "Summarise this customer feedback note in exactly three bullet points for the weekly report:\n\n\"We had the new heat pump installed on a Tuesday, and overall the experience was good. The two technicians arrived about forty minutes later than the window we were given, which meant I had to rearrange a work call, but they phoned ahead to warn me, which I appreciated. The installation itself was tidy: they laid down floor protection, explained every step, and took all of the packaging away with them. The outdoor unit is noticeably quieter than our old boiler flue fan. My only real complaint is the thermostat app. It took me most of an evening to pair it with the system, and the instructions in the box referred to menu options that no longer exist in the current version of the app. Your support line sorted it out the next morning in about ten minutes. Our first electricity bill since the switch is lower than we expected for February, so we are happy with the result and would recommend you to friends, with a note to fix those app instructions.\"",
+      "max_tokens": 256
+    },
+    {
+      "label": "Extract JSON from email",
+      "user": "Extract the booking details from the email below into a JSON object with exactly these keys: customer_name (string), phone (string), address (string), service_type (one of \"installation\", \"repair\", \"annual_service\"), equipment_model (string or null), preferred_dates (array of strings in YYYY-MM-DD format), urgent (boolean), notes (string, max 20 words). Output only the JSON.\n\nFrom: Daniela Okafor-Lindgren\nSubject: Heat pump making a grinding noise\nDate: Mon, 3 Nov 2025 08:12\n\nHello,\n\nOur outdoor unit (it says Thermacore HX-9 on the side) started making a grinding noise on Saturday and since last night the house is only reaching about 16 degrees. We have a baby at home so we'd really like someone out as soon as possible. I'm at home on Wednesday the 5th and Thursday the 6th of November, any time after 10am. The address is 14 Larkspur Close, Ashbury, AB3 7QN. Best number is 07700 900481. The unit was installed by you in 2022 and was last serviced in March.\n\nThanks,\nDaniela",
+      "max_tokens": 320
+    },
+    {
+      "label": "Follow-up using earlier turns",
+      "user": "Thanks. Looking at the booking you just extracted and the feedback note you summarised earlier: what two things should the dispatcher tell Daniela when confirming her visit so that we avoid the problems the earlier customer complained about? Answer in two short sentences and mention her preferred date.",
+      "max_tokens": 200
+    },
+    {
+      "label": "Planning as numbered list",
+      "user": "Last one. Draft a short plan for the technician visiting Daniela's grinding Thermacore HX-9 unit, as a numbered list of 5 to 7 steps, from preparation before leaving the depot to what to record in the job system afterwards. Keep each step to one line.",
+      "max_tokens": 360
+    }
+  ]
+}

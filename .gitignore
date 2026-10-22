@@ -1,0 +1,15 @@
+# Never commit API keys, nor editor copies of the key file (vim swap/backup files hold its full text)
+secrets.local.json
+*secrets*.json*
+*.local.json
+.env
+*.swp
+*.swo
+*~
+# Regenerated or duplicated (benchmark results, timelines and run logs ARE kept in git)
+data/cache/
+data/site/
+data/results.backup-*.json
+__pycache__/
+*.pyc
+.DS_Store

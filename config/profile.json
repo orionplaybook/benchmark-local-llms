@@ -1,0 +1,34 @@
+{
+  "name": "standard-v1",
+  "description": "Standard load + sampling profile used for every model so results are comparable.",
+  "context_length": 114688,
+  "flash_attention": null,
+  "offload_kv_cache_to_gpu": null,
+  "eval_batch_size": null,
+  "temperature": 0,
+  "top_p": 1,
+  "top_k": 1,
+  "min_p": 0,
+  "repeat_penalty": 1,
+  "seed": 42,
+  "repeats": 3,
+  "warmup": 1,
+  "cold_cycles": 2,
+  "reasoning_modes": [
+    "off",
+    "high"
+  ],
+  "reasoning_extra_tokens": {
+    "short": 3072,
+    "extraction": 8192,
+    "long": 4096,
+    "live_extract": 4096
+  },
+  "request_timeout_s": 1800,
+  "memory_sample_interval_s": 0.25,
+  "settle_timeout_s": 30,
+  "min_long_prompt_tokens": 64000,
+  "max_test_restarts": 3,
+  "swap_warning_gb": 1,
+  "cleanup_wait_s": 30
+}
