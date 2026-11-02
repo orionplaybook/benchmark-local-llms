@@ -1,0 +1,37 @@
+{
+  "suite_version": "1",
+  "model": "Aurora-Lite 14B Instruct",
+  "fields": {
+    "model_name": [
+      "Aurora-Lite 14B Instruct",
+      "Aurora-Lite-14B-Instruct",
+      "lumenfold/Aurora-Lite-14B-Instruct"
+    ],
+    "params_b": 14.8,
+    "context_window": 131072,
+    "license": [
+      "Apache-2.0",
+      "Apache 2.0",
+      "Apache License 2.0"
+    ],
+    "release_date": "2025-09-23"
+  },
+  "benchmarks": {
+    "MMLU-Pro": 71.2,
+    "GPQA Diamond": 58.4,
+    "AIME 2025": 62.7,
+    "LiveCodeBench": 48.9,
+    "SWE-bench Verified": 39.8,
+    "BFCL v3": 68.1,
+    "τ²-bench": 52.3,
+    "IFEval": 84.6,
+    "MMMU": 61.5,
+    "RULER 128k": 79.4,
+    "HumanEval": 87.2,
+    "MATH-500": 91.3,
+    "Arena Elo": 1287,
+    "Agentic Index": 47.6,
+    "Coding Index": 44.1
+  },
+  "notes": "A list value means any of the listed strings is accepted (case-insensitive, trimmed). Numbers use an absolute tolerance of 0.051."
+}

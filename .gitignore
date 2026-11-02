@@ -1,0 +1,38 @@
+# Never commit API keys, nor editor copies of the key file (vim swap/backup files hold its full text)
+secrets.local.json
+*secrets*.json*
+*.local.json
+.env
+*.swp
+*.swo
+*~
+# Regenerated or duplicated (benchmark results, timelines and run logs ARE kept in git)
+data/cache/
+data/site/
+data/results.backup-*.json
+# Third-party code: downloaded (pinned, SHA-256 checked) by src/benchlm/vendor.py, never committed
+dashboard/vendor/*.js
+dashboard/vendor/*.part
+__pycache__/
+*.pyc
+# Operating system files
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.DocumentRevisions-V100
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Linux
+.directory
+.Trash-*
+.nfs*

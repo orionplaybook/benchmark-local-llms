@@ -1,0 +1,30 @@
+{
+  "suite_version": "1",
+  "name": "long",
+  "system_prompt": "You answer questions about the handbook the user provides. Use only information stated in that document. If the document does not contain the answer, say \"not in the document\". Be concise.",
+  "turns": [
+    {
+      "label": "Load document + overview",
+      "user_template": "<<DOCUMENT>>\n\nQuestion: Give a 3-sentence overview of this handbook: what the company does, how the handbook is organised, and what kinds of material it contains.",
+      "max_tokens": 200
+    },
+    {
+      "label": "Recall: start of document",
+      "user": "Answer these questions from the handbook concisely, as a numbered list with one short answer per line:\n1. What is the emergency override code for Dock 7 at the Kessler Ridge spaceport?\n2. Aboard which vessel was the company's founding charter signed?\n3. What is the name of the signature stew served every Thursday in the Ostrava Hub Level 3 canteen?",
+      "fact_ids": ["f1", "f2", "f3"],
+      "max_tokens": 300
+    },
+    {
+      "label": "Recall: middle of document",
+      "user": "Now these, again concisely as a numbered list with one short answer per line:\n1. What is the designation of the vault that holds the firmware signing key for the Pathfinder telemetry units?\n2. Whose written sign-off is required before any hot-fire test of the Mk-IV maneuvering thruster?\n3. What is the name of the company's highest internal award for exceptional logistics work?\n4. In which town is the backup ground station for orbital traffic control located?",
+      "fact_ids": ["f4", "f5", "f6", "f7"],
+      "max_tokens": 300
+    },
+    {
+      "label": "Recall: end of document",
+      "user": "Finally, answer these concisely as a numbered list with one short answer per line:\n1. What nickname did the operations crew give the decommissioned satellite ND-Sentinel-3?\n2. Which contractor is responsible for maintaining the cryogenic fuel lines?\n3. On what date is the time capsule beneath the Kessler Ridge flagpole scheduled to be opened?",
+      "fact_ids": ["f8", "f9", "f10"],
+      "max_tokens": 300
+    }
+  ]
+}

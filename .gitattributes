@@ -1,0 +1,12 @@
+# Same line endings on every computer, whatever core.autocrlf is set to there.
+# Without this, a Windows checkout can commit CRLF and turn results.json into a whole-file diff.
+* text=auto eol=lf
+bench text eol=lf
+*.sh text eol=lf
+# Windows launcher: cmd.exe wants CRLF in the working copy (stored as LF in git)
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary
+*.woff2 binary

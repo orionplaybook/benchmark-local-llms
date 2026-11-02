@@ -1,0 +1,8 @@
+{
+  "suite_version": "1",
+  "system_prompt": "You are a precise data extraction engine. Output only JSON.",
+  "user_template": "Extract metadata and benchmark scores for the model \"Aurora-Lite 14B Instruct\" from the two web pages below. Use only values stated on the pages for this exact model; ignore scores of other models, earlier preview versions, non-thinking mode and alternative settings mentioned in footnotes. If a value is not on the pages, use null.\n\nReturn JSON matching this schema:\n{\n  \"model_name\": string,\n  \"params_b\": number (total parameters in billions, e.g. 7.5),\n  \"context_window\": integer (maximum context length in tokens),\n  \"license\": string,\n  \"release_date\": string (YYYY-MM-DD),\n  \"benchmarks\": [ {\"name\": string, \"score\": number}, ... ]\n}\n\nIn \"benchmarks\", include one entry per benchmark from this list, using these exact names: MMLU-Pro, GPQA Diamond, AIME 2025, LiveCodeBench, SWE-bench Verified, BFCL v3, τ²-bench, IFEval, MMMU, RULER 128k, HumanEval, MATH-500, Arena Elo, Agentic Index, Coding Index. Scores are plain numbers without \"%\" signs.\nOutput only the JSON object, with no explanation and no Markdown.\n\n=== PAGE 1 ===\n<<PAGE1>>\n\n=== PAGE 2 ===\n<<PAGE2>>",
+  "page1": "page_model_card.md",
+  "page2": "page_leaderboard.md",
+  "max_tokens": 900
+}

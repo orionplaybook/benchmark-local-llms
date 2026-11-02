@@ -1,0 +1,84 @@
+[
+  {
+    "id": "f1",
+    "question": "What is the emergency override code for Dock 7 at the Kessler Ridge spaceport?",
+    "answers": [
+      "TANGERINE-4471"
+    ],
+    "position_pct": 3.1
+  },
+  {
+    "id": "f2",
+    "question": "Aboard which vessel was the company's founding charter signed?",
+    "answers": [
+      "Halcyon Drift"
+    ],
+    "position_pct": 8.5
+  },
+  {
+    "id": "f3",
+    "question": "What is the name of the signature stew served every Thursday in the Ostrava Hub Level 3 canteen?",
+    "answers": [
+      "Grumbleroot Pottage",
+      "Grumbleroot"
+    ],
+    "position_pct": 22.1
+  },
+  {
+    "id": "f4",
+    "question": "What is the designation of the vault that holds the firmware signing key for the Pathfinder telemetry units?",
+    "answers": [
+      "BLUE-HERON-82",
+      "BLUE HERON 82"
+    ],
+    "position_pct": 33.4
+  },
+  {
+    "id": "f5",
+    "question": "Whose written sign-off is required before any hot-fire test of the Mk-IV maneuvering thruster?",
+    "answers": [
+      "Valtameri"
+    ],
+    "position_pct": 44.1
+  },
+  {
+    "id": "f6",
+    "question": "What is the name of the company's highest internal award for exceptional logistics work?",
+    "answers": [
+      "Copper Albatross"
+    ],
+    "position_pct": 50.1
+  },
+  {
+    "id": "f7",
+    "question": "In which town is the backup ground station for orbital traffic control located?",
+    "answers": [
+      "Pellingford"
+    ],
+    "position_pct": 57.2
+  },
+  {
+    "id": "f8",
+    "question": "What nickname did the operations crew give the decommissioned satellite ND-Sentinel-3?",
+    "answers": [
+      "Old Biscuit"
+    ],
+    "position_pct": 72.3
+  },
+  {
+    "id": "f9",
+    "question": "Which contractor is responsible for maintaining the cryogenic fuel lines?",
+    "answers": [
+      "Fennimore"
+    ],
+    "position_pct": 93.4
+  },
+  {
+    "id": "f10",
+    "question": "On what date is the time capsule beneath the Kessler Ridge flagpole scheduled to be opened?",
+    "answers": [
+      "2071"
+    ],
+    "position_pct": 97.3
+  }
+]
